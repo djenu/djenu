@@ -1,0 +1,45 @@
+.he{
+  border-radius: 10px;
+  background-color: rgb(250, 246, 246);
+  margin: 50px;
+  margin-top: 5px;
+  border: solid 15px rgba(245, 239, 239, 0.2);
+}
+.he0{
+  display: flex;
+  flex-wrap: wrap;
+}
+ a{
+  margin-left: 3%;
+  margin-top: 5px;
+  text-decoration: none;
+  color: black;
+}
+.mot:hover{
+  color: blue;
+}
+.diver{
+  border-radius: 15px;
+  background-color: rgb(236, 222, 204);
+  flex: 0 0 auto;
+  margin-right: 10px;
+  width: 300px;
+  height: 300px;
+}
+.diver:hover{
+  box-shadow: 5px 5px 5px  rgb(150,150,150), -5px -5px 3px rgb(150,150,150);}
+img{
+  width: 200px;
+  height: 200px;
+}
+.contain{
+  display: flex;
+   animation: scroll 10s linear infinite;
+}
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+transform: translateX(-100%);  }
+}
