@@ -1,3 +1,6 @@
+HTML{
+  scroll-behavior: smooth;
+}
 .he{
   border-radius: 10px;
   background-color: rgb(250, 246, 246);
@@ -5,9 +8,21 @@
   margin-top: 5px;
   border: solid 15px rgba(245, 239, 239, 0.2);
 }
+.for{
+  border-radius: 20px;
+  padding: 20px;
+  background:linear-gradient(to left,rgb(250, 246, 246),wheat);
+  margin-inline: 37%;
+  margin-top: 150px;
+  max-width: 400px;
+}
+
 .he0{
   display: flex;
   flex-wrap: wrap;
+}
+input{
+  border-radius: 5px;
 }
  a{
   margin-left: 3%;
@@ -26,7 +41,24 @@
   width: 300px;
   height: 300px;
 }
-.diver:hover{
+.dive{
+  border-radius: 15px;
+  background-color: rgb(236, 222, 204);
+  flex: 0 0 auto;
+  margin-right: 10px;
+  width: 300px;
+  height: 300px;
+}
+.dive1{
+  border-radius: 15px;
+  background-color: rgb(236, 222, 204);
+  flex: 0 0 auto;
+  margin-left: 230px;
+  margin-right: 10px;
+  width: 300px;
+  height: 300px;
+}
+.diver:hover, .dive:hover, .dive1:hover{
   box-shadow: 5px 5px 5px  rgb(150,150,150), -5px -5px 3px rgb(150,150,150);}
 img{
   width: 200px;
@@ -34,7 +66,7 @@ img{
 }
 .contain{
   display: flex;
-   animation: scroll 10s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 @keyframes scroll{
   0%{
@@ -42,4 +74,65 @@ img{
   }
   100%{
 transform: translateX(-100%);  }
+}
+.container{
+  width: 600px;
+  height: 300px; 
+  margin-top: 200px;
+  overflow: hidden; 
+  border-radius: 15px;
+  margin-left: 10%;
+}
+.cont{
+  width: 300px; 
+  height: 500px; 
+  margin-top: 250px;
+  margin-left: 15%;
+}
+.ligne{
+  width:7px; 
+  height:150px; 
+  background-color: gray; 
+  margin-top: 260px; 
+  border-radius: 30px;
+}
+@media screen and (max-width: 820px){  
+  .container{
+  margin-top: 0px; 
+  }
+  .cont{
+    max-height:300px;
+    margin-top: 0px;
+  }
+  .ligne{
+    margin-top: 0px;
+  }
+  .he{
+    margin-top: 20px;
+  }
+  .he0{
+   margin-left: 20%;
+  }
+  .mot{
+    font-size: 25px;
+    font-style:oblique;
+  }
+  .dive{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    flex: none;
+  }
+  .dive1{
+    margin-inline: 50px;
+    margin-bottom: 20px;
+
+  }
+  .for{
+    border-radius: 20px;
+    padding: 20px;
+    background:linear-gradient(to left,rgb(250, 246, 246),wheat);
+    margin-inline: 10%;
+    margin-top: 150px;
+    max-width: 400px;
+  }
 }
